@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friendly Zen</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f8f6f1;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd8cf;
+      padding: 18px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin-left: 18px;
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 10px 55px;
+    }
+
+    .friendly-heading {
+      margin: 0 0 26px;
+      line-height: 1;
+    }
+
+    .friendly-word {
+      display: inline-block;
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      font-size: 4.3rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .friendly-word span:nth-child(1) { color: #e8291c; }
+    .friendly-word span:nth-child(2) { color: #f28c28; }
+    .friendly-word span:nth-child(3) { color: #f0c629; }
+    .friendly-word span:nth-child(4) { color: #42a85f; }
+    .friendly-word span:nth-child(5) { color: #168bc7; }
+    .friendly-word span:nth-child(6) { color: #355fc5; }
+    .friendly-word span:nth-child(7) { color: #7e4db3; }
+    .friendly-word span:nth-child(8) { color: #9b2d7a; }
+
+    .zen-word {
+      display: inline-block;
+      margin-left: 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 3.5rem;
+      font-weight: bold;
+      letter-spacing: 4px;
+      color: #111;
+    }
+
+    .hero-text {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.25rem;
+    }
+
+    .intro {
+      background: #ffffff;
+      border: 1px solid #ddd8cf;
+      border-radius: 22px;
+      padding: 34px;
+      margin-bottom: 34px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #ddd8cf;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.035);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .card a {
+      color: #1f5f3b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .practice-list {
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+
+    .practice-list li {
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: #666;
+      border-top: 1px solid #ddd8cf;
+      background: #ffffff;
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .friendly-word {
+        font-size: 3.1rem;
+      }
+
+      .zen-word {
+        display: block;
+        margin-left: 0;
+        margin-top: 12px;
+        font-size: 3rem;
+      }
+
+      .hero-text {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <a class="logo" href="index.html">Friendly Zen</a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Friendly Zen</a>
+        <a href="services.html">Services</a>
+        <a href="meditation.html">Meditation</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="friendly-heading">
+        <span class="friendly-word">
+          <span>F</span><span>r</span><span>i</span><span>e</span><span>n</span><span>d</span><span>l</span><span>y</span>
+        </span>
+        <span class="zen-word">ZEN</span>
+      </h1>
+
+      <p class="hero-text">
+        A calm and welcoming space for relaxed meditation, simple sitting,
+        and befriending all parts of ourselves.
+      </p>
+    </section>
+
+    <section class="intro">
+      <h2>What is Friendly Zen?</h2>
+
+      <p>
+        Friendly Zen is a relaxed and simple meditation practice. We are not
+        trying to achieve anything or force ourselves to be different. We sit,
+        we notice, and we allow ourselves to arrive as we are.
+      </p>
+
+      <p>
+        When the mind wanders, that is not a problem. It is part of the practice.
+        When the mind is ready, it returns. Friendly Zen is about giving ourselves
+        permission to sit gently, together or alone.
+      </p>
+    </section>
+
+    <section class="intro">
+      <h2>The practice is about...</h2>
+
+      <ul class="practice-list">
+        <li>Relaxed and simple meditation.</li>
+        <li>Not trying to achieve anything.</li>
+        <li>Welcoming and befriending all parts of ourselves.</li>
+        <li>Allowing the mind to wander and return naturally.</li>
+        <li>Making a comfortable space to sit.</li>
+        <li>Practising “just sitting”.</li>
+        <li>Sitting together in a friendly way.</li>
+      </ul>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>About Friendly Zen</h3>
+        <p>
+          Learn more about the purpose behind Friendly Zen and the approach
+          that guides this practice.
+        </p>
+        <a href="about.html">Read more</a>
+      </div>
+
+      <div class="card">
+        <h3>Services</h3>
+        <p>
+          Find out about Friendly Zen sessions, group sitting, and other
+          possible offerings.
+        </p>
+        <a href="services.html">View services</a>
+      </div>
+
+      <div class="card">
+        <h3>Meditation</h3>
+        <p>
+          Read simple relaxed meditation instructions and guidance for sitting.
+        </p>
+        <a href="meditation.html">Explore meditation</a>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+        <p>
+          Get in touch or ask a question about Friendly Zen.
+        </p>
+        <a href="contact.html">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Friendly Zen</p>
+  </footer>
+</body>
+</html>
