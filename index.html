@@ -1,3 +1,8 @@
+You’re right. Here is the actual paste-in version.
+
+Replace **everything** currently in `index.html` with this. I’ve kept it plain, tidy, easy to edit, and based on the content you gave me.  
+
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,194 +10,173 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Friendly Zen</title>
 
+  <!-- Fonts. You can remove these two lines if you want it plainer. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    /* basic page */
+
     body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: #f8f6f1;
-      color: #222;
-      line-height: 1.7;
+      background: #ffffff;
+      color: #111111;
+      font-family: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
+      font-size: 18px;
+      line-height: 1.65;
     }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    a {
+      color: #111111;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* menu */
 
     header {
-      background: #ffffff;
-      border-bottom: 1px solid #ddd8cf;
-      padding: 18px 24px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      border-bottom: 1px solid #111111;
+      margin-bottom: 46px;
+      padding-bottom: 14px;
     }
 
-    .nav {
-      max-width: 1050px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .logo {
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-      font-size: 1.2rem;
+    nav {
+      font-size: 15px;
+      line-height: 1.8;
     }
 
     nav a {
-      margin-left: 18px;
-      text-decoration: none;
-      color: #333;
-      font-size: 1rem;
+      margin-right: 18px;
+      white-space: nowrap;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    /* heading */
+
+    .main-heading {
+      margin: 32px 0 8px;
+      line-height: 0.95;
+      font-weight: normal;
     }
 
-    main {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 60px 24px;
+    .friendly {
+      font-family: "Zen Kurenaido", "Apple Chancery", "Snell Roundhand", "Segoe Script", cursive;
+      font-size: clamp(4rem, 13vw, 7.5rem);
+      font-weight: normal;
+      letter-spacing: -0.04em;
     }
 
-    .hero {
-      text-align: center;
-      padding: 40px 10px 55px;
+    .zen {
+      display: block;
+      margin-top: 10px;
+      font-family: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
+      font-size: clamp(3rem, 9vw, 5.5rem);
+      font-weight: 600;
+      letter-spacing: 0.14em;
     }
 
-    .friendly-heading {
-      margin: 0 0 26px;
-      line-height: 1;
+    /*
+      Friendly colours.
+      Please keep these as:
+      red, orange, yellow, green, blue, violet, brown, black.
+    */
+
+    .red { color: #e40303; }
+    .orange { color: #ff8c00; }
+    .yellow { color: #ffed00; }
+    .green { color: #008026; }
+    .blue { color: #004dff; }
+    .violet { color: #750787; }
+    .brown { color: #784f17; }
+    .black { color: #000000; }
+
+    .small-line {
+      margin: 0 0 56px;
+      font-size: 17px;
     }
 
-    .friendly-word {
-      display: inline-block;
-      font-family: "Brush Script MT", "Segoe Script", cursive;
-      font-size: 4.3rem;
-      font-weight: bold;
-      letter-spacing: 1px;
+    /* sections */
+
+    section {
+      margin: 0 0 48px;
+      padding-top: 8px;
+      border-top: 1px solid #111111;
     }
 
-    .friendly-word span:nth-child(1) { color: #e8291c; }
-    .friendly-word span:nth-child(2) { color: #f28c28; }
-    .friendly-word span:nth-child(3) { color: #f0c629; }
-    .friendly-word span:nth-child(4) { color: #42a85f; }
-    .friendly-word span:nth-child(5) { color: #168bc7; }
-    .friendly-word span:nth-child(6) { color: #355fc5; }
-    .friendly-word span:nth-child(7) { color: #7e4db3; }
-    .friendly-word span:nth-child(8) { color: #9b2d7a; }
-
-    .zen-word {
-      display: inline-block;
-      margin-left: 14px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 3.5rem;
-      font-weight: bold;
-      letter-spacing: 4px;
-      color: #111;
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 0 18px;
     }
 
-    .hero-text {
-      max-width: 720px;
-      margin: 0 auto;
-      font-size: 1.25rem;
+    p {
+      margin: 0 0 18px;
     }
 
-    .intro {
-      background: #ffffff;
-      border: 1px solid #ddd8cf;
-      border-radius: 22px;
-      padding: 34px;
-      margin-bottom: 34px;
-      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
-    }
-
-    .intro h2 {
+    ul,
+    ol {
+      padding-left: 24px;
       margin-top: 0;
-      font-size: 2rem;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 22px;
-      margin-top: 34px;
+    li {
+      margin-bottom: 10px;
     }
 
-    .card {
-      background: #ffffff;
-      border: 1px solid #ddd8cf;
-      border-radius: 18px;
-      padding: 26px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.035);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.4rem;
-    }
-
-    .card a {
-      color: #1f5f3b;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
-
-    .practice-list {
+    .quote {
+      margin: 32px 0;
       padding-left: 22px;
-      margin-bottom: 0;
+      border-left: 1px solid #111111;
+      font-size: 20px;
     }
 
-    .practice-list li {
-      margin-bottom: 12px;
+    .quote span {
+      display: block;
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    .image-credit {
+      font-size: 13px;
+      line-height: 1.4;
+      margin-top: 8px;
     }
 
     footer {
-      text-align: center;
-      padding: 32px 20px;
-      color: #666;
-      border-top: 1px solid #ddd8cf;
-      background: #ffffff;
+      border-top: 1px solid #111111;
+      margin-top: 56px;
+      padding-top: 18px;
+      font-size: 15px;
     }
 
-    @media (max-width: 760px) {
-      .nav {
-        flex-direction: column;
+    @media (max-width: 600px) {
+      body {
+        font-size: 17px;
       }
 
       nav a {
         display: inline-block;
-        margin: 6px 8px;
-      }
-
-      .friendly-word {
-        font-size: 3.1rem;
-      }
-
-      .zen-word {
-        display: block;
-        margin-left: 0;
-        margin-top: 12px;
-        font-size: 3rem;
-      }
-
-      .hero-text {
-        font-size: 1.1rem;
+        margin-right: 12px;
       }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="nav">
-      <a class="logo" href="index.html">Friendly Zen</a>
+  <div class="page">
 
+    <header>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Friendly Zen</a>
@@ -200,93 +184,137 @@
         <a href="meditation.html">Meditation</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h1 class="friendly-heading">
-        <span class="friendly-word">
-          <span>F</span><span>r</span><span>i</span><span>e</span><span>n</span><span>d</span><span>l</span><span>y</span>
+    <main>
+
+      <!-- main heading -->
+
+      <h1 class="main-heading">
+        <span class="friendly">
+          <span class="red">F</span><span class="orange">r</span><span class="yellow">i</span><span class="green">e</span><span class="blue">n</span><span class="violet">d</span><span class="brown">l</span><span class="black">y</span>
         </span>
-        <span class="zen-word">ZEN</span>
+        <span class="zen">ZEN</span>
       </h1>
 
-      <p class="hero-text">
-        A calm and welcoming space for relaxed meditation, simple sitting,
-        and befriending all parts of ourselves.
+      <p class="small-line">
+        <!---- add a comment later ---->
       </p>
-    </section>
 
-    <section class="intro">
-      <h2>What is Friendly Zen?</h2>
+      <!-- image -->
 
+      <figure>
+        <img src="couleur-water-lily-3784022.jpeg" alt="Water lily on dark water">
+        <figcaption class="image-credit">
+          Image by <a href="https://pixabay.com/users/couleur-1195798/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3784022">Couleur</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3784022">Pixabay</a>
+        </figcaption>
+      </figure>
+
+      <!-- what is friendly zen -->
+
+      <section>
+        <h2>What is Friendly Zen Meditation?</h2>
+
+        <p>
+          The meditation we do is relaxed meditation. We are not trying to do anything or achieve anything.
+        </p>
+
+        <p>
+          All parts of ourselves are welcomed in this friendly practice.
+        </p>
+
+        <p>
+          When we meditate, our mind tends to shoot off somewhere. When it’s ready, it returns.
+          This is okay and normal.
+        </p>
+      </section>
+
+      <!-- why we do this practice -->
+
+      <section>
+        <h2>Why we do this practice</h2>
+
+        <p>
+          We do this practice to help us live a better life. This means a more fulfilling life
+          with less confusion and more clarity about who we are and what is possible for us —
+          what we can do and what we can be.
+        </p>
+
+        <p>
+          We do it to be able to enjoy the gifts of this life and express our love for others
+          and the world.
+        </p>
+
+        <p>
+          We do it because we can only really be happy when we live in accordance with our
+          deepest values. Meditation helps us discover this aspect of ourselves.
+        </p>
+      </section>
+
+      <!-- just sitting -->
+
+      <section>
+        <h2>Just sitting</h2>
+
+        <p>
+          At home, make a space where you can sit comfortably. A chair or sofa or a meditation
+          cushion or bench are all fine.
+        </p>
+
+        <p>
+          We are doing zazen, which means seated meditation.
+        </p>
+
+        <p>
+          The practice of simply sitting, and knowing this is what you are doing, is called
+          shikantaza, which means just sitting.
+        </p>
+
+        <p>
+          Body and mind just sitting together. And all of us doing this together.
+          This is friendly zen.
+        </p>
+      </section>
+
+      <!-- quote -->
+
+      <section>
+        <h2>A saying</h2>
+
+        <p class="quote">
+          “You should meditate for 20 minutes a day. Unless you are too busy.
+          Then you should meditate for an hour a day.”
+          <span>- unknown</span>
+        </p>
+      </section>
+
+      <!-- instructions -->
+
+      <section>
+        <h2>Instructions</h2>
+
+        <ol>
+          <li>As you enter your meditation space, give yourself permission to leave your concerns at the door for a period of time. You can go back to them after.</li>
+          <li>Check in with your breath and body. Take a few moments to slow down, settle in, and arrive.</li>
+          <li>Just sit. Try 5 minutes. Try 20 minutes.</li>
+          <li>Check in with your breath and body. Take a moment to stretch and prepare your body to stand.</li>
+          <li>That’s it. Well done.</li>
+        </ol>
+      </section>
+
+    </main>
+
+    <footer>
       <p>
-        Friendly Zen is a relaxed and simple meditation practice. We are not
-        trying to achieve anything or force ourselves to be different. We sit,
-        we notice, and we allow ourselves to arrive as we are.
+        Jack Wicks<br>
+        <a href="mailto:friendlyzen2026@gmail.com">friendlyzen2026@gmail.com</a>
       </p>
+    </footer>
 
-      <p>
-        When the mind wanders, that is not a problem. It is part of the practice.
-        When the mind is ready, it returns. Friendly Zen is about giving ourselves
-        permission to sit gently, together or alone.
-      </p>
-    </section>
-
-    <section class="intro">
-      <h2>The practice is about...</h2>
-
-      <ul class="practice-list">
-        <li>Relaxed and simple meditation.</li>
-        <li>Not trying to achieve anything.</li>
-        <li>Welcoming and befriending all parts of ourselves.</li>
-        <li>Allowing the mind to wander and return naturally.</li>
-        <li>Making a comfortable space to sit.</li>
-        <li>Practising “just sitting”.</li>
-        <li>Sitting together in a friendly way.</li>
-      </ul>
-    </section>
-
-    <section class="cards">
-      <div class="card">
-        <h3>About Friendly Zen</h3>
-        <p>
-          Learn more about the purpose behind Friendly Zen and the approach
-          that guides this practice.
-        </p>
-        <a href="about.html">Read more</a>
-      </div>
-
-      <div class="card">
-        <h3>Services</h3>
-        <p>
-          Find out about Friendly Zen sessions, group sitting, and other
-          possible offerings.
-        </p>
-        <a href="services.html">View services</a>
-      </div>
-
-      <div class="card">
-        <h3>Meditation</h3>
-        <p>
-          Read simple relaxed meditation instructions and guidance for sitting.
-        </p>
-        <a href="meditation.html">Explore meditation</a>
-      </div>
-
-      <div class="card">
-        <h3>Contact</h3>
-        <p>
-          Get in touch or ask a question about Friendly Zen.
-        </p>
-        <a href="contact.html">Contact</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Friendly Zen</p>
-  </footer>
+  </div>
 </body>
 </html>
+```
+
+After pasting it, click **Commit changes**.
+
