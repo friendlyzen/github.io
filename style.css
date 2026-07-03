@@ -66,7 +66,7 @@
     }
 
     .main-heading {
-      margin: 32px 0 0px;
+      margin: 32px 0 56px;
       line-height: 0.95;
       font-weight: normal;
       font-size: clamp(3rem, 9vw, 5.5rem);
