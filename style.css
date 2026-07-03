@@ -1,0 +1,195 @@
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #111111;
+      font-family: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+      
+    .current_page {
+    background-color: #f2eee6;
+    border: 1px solid #d8d0c4;
+    color: #000;
+    padding: 0.05em 0.3em;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    }
+      
+
+    a {
+      color: #111111;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block; 
+    }
+
+    figure {
+      margin: 0 0 35px;
+    } 
+
+    .image-credit {
+      font-size: 0.7em;
+      color: #555;
+      line-height: 1.4;
+      margin-top: 8px;
+    }
+
+    header {
+      border-bottom: 1px solid #111111;
+      margin-bottom: 46px;
+      padding-bottom: 14px;
+    }
+
+    nav {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    nav a {
+      margin-right: 18px;
+      white-space: nowrap;
+    }
+
+    .main-heading {
+      margin: 32px 0 0px;
+      line-height: 0.95;
+      font-weight: normal;
+      font-size: clamp(3rem, 9vw, 5.5rem);
+    }
+
+.subheading {
+  margin: 0.5rem 0 1.2rem;
+  font-size: clamp(1.1rem, 2.4vw, 1.55rem);
+  line-height: 1.35;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.04em;
+}
+
+
+    .friendly {
+      font-family: "Cormorant Infant", serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.24em;
+      letter-spacing: -0.01em;
+  }
+
+    .zen {
+      display: block;
+      margin-top: 10px;
+      font-family: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+    }
+
+    /*
+      Friendly colours:
+      red, orange, yellow, green, blue, violet, brown, black.
+      Please keep these fixed.
+    */
+
+    .red { color: #e40303; }
+    .orange { color: #ff8c00; }
+    .yellow { color: #ffed00; }
+    .green { color: #008026; }
+    .blue { color: #004dff; }
+    .violet { color: #750787; }
+    .brown { color: #784f17; }
+    .black { color: #000000; }
+
+    .small-line {
+      margin: 0 0 56px;
+      font-size: 19px;
+    }
+
+    section {
+      margin: 0 0 48px;
+      padding-top: 8px;
+      border-top: 1px solid #111111;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 0 18px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 450;
+      margin: 0 0 8px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ol {
+      padding-left: 24px;
+      margin-top: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .quote {
+      margin: 32px 0;
+      padding-left: 22px;
+      border-left: 1px solid #111111;
+      font-size: 1em;
+    }
+
+    .quote span {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.8em;
+    }
+
+    footer {
+      border-top: 1px solid #111111;
+      margin-top: 56px;
+      padding-top: 18px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .zen {
+    margin-top: 4px;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+  }
+}
