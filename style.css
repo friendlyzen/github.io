@@ -193,3 +193,9 @@
     letter-spacing: 0.03em;
   }
 }
+
+@media (min-width: 601px) {
+  .friendly {
+    font-size: 1.15em; /* desktop/tablet override */
+  }
+}
