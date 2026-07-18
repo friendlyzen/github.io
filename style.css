@@ -208,3 +208,15 @@
     font-size: 1em; /* desktop/tablet override */
   }
 }
+
+.top-name {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(0.7rem, 3.5vw, 1.25rem);
+  line-height: 1.2;
+  color: black;
+}
+
