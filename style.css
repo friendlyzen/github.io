@@ -210,20 +210,22 @@
 }
 
 .top-name {
-  display: inline-block;
-  width: auto;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
   box-sizing: border-box;
+
+  margin: 0 auto 14px;
   padding: 0.2em 0.55em;
-  margin-bottom: 14px;
 
   text-align: center;
   white-space: nowrap;
   font-size: clamp(0.7rem, 3.5vw, 1.25rem);
   line-height: 1.2;
-  color: black;
+  color: #000;
 
-  border: 1px solid #d8d0c4;
   background-color: #f2eee6;
+  border: 1px solid #d8d0c4;
   border-radius: 3px;
 }
 
