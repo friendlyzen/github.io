@@ -235,17 +235,17 @@
   max-width: 100%;
   box-sizing: border-box;
 
-  margin: 0 auto 14px;
+  margin: 0 auto 0px;
   padding: 0.2em 0.55em;
 
   text-align: center;
   white-space: nowrap;
   font-size: clamp(0.7rem, 3.5vw, 1.25rem);
   line-height: 1.2;
-  color: #000;
+  color: #4A1521;
 
-  background-color: #F5ECED;
-  border: 1px solid #A35263;
+  background-color: #FAF0F2;
+  border: 1px solid #B24C63;
   border-radius: 3px;
 }
 
