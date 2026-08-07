@@ -59,7 +59,7 @@
 
     header_small_bottom_margin {
       border-bottom: 1px solid #111111;
-      margin-bottom: 46px;
+      margin-bottom: 24px;
       padding-bottom: 14px;
     }
 
@@ -250,6 +250,7 @@
   font-size: clamp(0.7rem, 3.5vw, 1.25rem);
   line-height: 1.2;
   color: #4A1521;
+  text-decoration: none;
   
 
   background-color: #FAF0F2;
