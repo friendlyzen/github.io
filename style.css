@@ -110,6 +110,7 @@
 
     .intro-line {
       text-align: center; 
+      font-style: italic;
       font-size: 0.85em;
       color: #989898;
       line-height: 1.4;
