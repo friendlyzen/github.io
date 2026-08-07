@@ -44,7 +44,7 @@
 
     .image-credit {
       font-size: 0.7em;
-      color: #555;
+      color: #989898;
       line-height: 1.4;
       margin-top: 8px;
     }
@@ -111,7 +111,7 @@
     .intro-line {
       text-align: center; 
       font-size: 0.85em;
-      color: #696969;
+      color: #989898;
       line-height: 1.4;
       font-weight: 100;
     }
@@ -177,6 +177,7 @@
       display: block;
       margin-top: 8px;
       font-size: 0.8em;
+      color: #989898;
     }
 
     footer {
