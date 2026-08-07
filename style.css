@@ -229,6 +229,25 @@
   border-radius: 3px;
 }
 
+.top-name-cranberry {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  margin: 0 auto 14px;
+  padding: 0.2em 0.55em;
+
+  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(0.7rem, 3.5vw, 1.25rem);
+  line-height: 1.2;
+  color: #000;
+
+  background-color: #F5ECED;
+  border: 1px solid #A35263;
+  border-radius: 3px;
+}
 
 
 
